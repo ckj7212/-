@@ -1,0 +1,6 @@
+{
+  "name": "우리 몸의 구조와 기능",
+  "description": "초등학교 6학년 과학 '생물의 구조와 기능' 단원용 인터랙티브 기관 탐구 및 토론 웹앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

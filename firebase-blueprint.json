@@ -1,0 +1,31 @@
+{
+  "entities": {
+    "Organ": {
+      "title": "Organ",
+      "description": "Biological organ that can be explored and voted on.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "emoji": { "type": "string" },
+        "bgColor": { "type": "string" },
+        "textColor": { "type": "string" },
+        "selfIntroTitle": { "type": "string" },
+        "introduction": { "type": "string" },
+        "keyFunctions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "oneLineFunction": { "type": "string" },
+        "videoUrl": { "type": "string" }
+      },
+      "required": ["id", "name", "emoji", "bgColor", "textColor", "selfIntroTitle", "introduction", "keyFunctions", "oneLineFunction", "videoUrl"]
+    }
+  },
+  "firestore": {
+    "/organs/{organId}": {
+      "schema": "Organ",
+      "description": "Collection of organ descriptors and educational resources"
+    }
+  }
+}
